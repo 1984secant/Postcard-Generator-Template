@@ -18,7 +18,7 @@
 		<main role="main">
 			<div class="first step">
 				<h2>1. Choose a State</h2>
-				<select name="names" id="states">
+				<select name="states" id="states" onchange="newState()">
 					<option selected disabled value="empty-state">United States of America</option>
 					<option value="al">Alabama</option>
 					<option value="ak">Alaska</option>
@@ -77,7 +77,7 @@
 				<h2>2. Enjoy Your Postcard!</h2>
 				<div id="postcard">
 					<p id="greeting">To Generate a Postcard</p>
-					<p id="state-heading">Choose a state</p>
+					<p id="stateName">Choose a state</p>
 					
 				</div>
 			</div>

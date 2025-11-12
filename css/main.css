@@ -86,7 +86,7 @@ select {
 	color: #fdfcfc;
 	margin-bottom: 2px;
 }
-#state-heading {
+#stateName {
 	font-family: 'Oswald', sans-serif;
 	font-weight: bold;
 	text-align: center;
@@ -135,7 +135,7 @@ footer p {
 		font-size: 28px;
 		margin-bottom: 2px;
 	}
-	#state-heading {
+	#stateName {
 		font-size: 50px;
 	}
 	footer {
