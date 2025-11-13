@@ -26,17 +26,22 @@
 
 let gr = document.getElementById("greeting");
 let stn = document.getElementById("stateName");
+//^^^^ was commented out to use the test code
 let post = document.getElementById("postcard");
-states.addEventListener("change", newState);
+let pic = document.getElementById("states");
 
+pic.addEventListener("change", newState);
 function newState() {
-    var picked = document.getElementById("states");
+    var picked = pic.options[pic.selectedIndex].text;
+    //old code: document.getElementById("states");
     gr.innerHTML = "Greetings from";
     stn.innerHTML = "" + picked;
-   post.style.backgroundImage = "url('../img/nj@2x.jpg')";
+   // test code: document.getElementById("stateName").innerHTML = "" + picked;
+ 
+ post.style.backgroundImage = `url('img/${pic.value}@2x.jpg')`;
     console.log(picked);
+    console.log(`url('../img/${pic.value}@2x.jpg')`);
 }
-
 
 
 
